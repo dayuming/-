@@ -3,7 +3,7 @@ package com.dayu.day01;
 // 快速排序
 public class QuickSorting01 {
     public static void main(String[] args) {
-        int[] arr = {8, 5, 7, 2, 9, 1, 0, 3, 3};
+        int[] arr = {6, 5, 7, 7, 7, 7, 3, 3};
 
         quickSort(arr, 0, arr.length - 1);
         for (int i = 0; i < arr.length; i++) {
@@ -31,7 +31,7 @@ public class QuickSorting01 {
 
         // 利用循环找到要交换的数字
         while (start != end) {
-            // 利用end，从后往前开始找，找比基准数下的数字
+            // 利用end，从后往前开始找，找比基准数小的数字
             while (true) {
                 if (end <= start || arr[end] < baseNumber) {
                     break;
@@ -57,7 +57,6 @@ public class QuickSorting01 {
         int temp = arr[i];
         arr[i] = arr[start];
         arr[start] = temp;
-
         // 递归调用
         // 左边
         quickSort(arr, i, start - 1);
