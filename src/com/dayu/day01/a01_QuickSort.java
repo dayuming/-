@@ -1,7 +1,7 @@
 package com.dayu.day01;
 
 // 快速排序
-public class QuickSorting01 {
+public class a01_QuickSort {
     public static void main(String[] args) {
         int[] arr = {6, 5, 7, 7, 7, 7, 3, 3};
 
